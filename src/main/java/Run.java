@@ -8,11 +8,11 @@ import java.util.ResourceBundle;
  * Created by Олег on 13.08.2017.
  */
 public class Run {
-    final static Logger logger = Logger.getLogger(Run.class);
+    final static Logger log = Logger.getLogger(Run.class);
     public static void main(String[] args) {
 
-        showMessage(getMessagesForLocale(new Locale("en","US")), new DateTime().getHourOfDay());
-        showMessage(getMessagesForLocale(new Locale("ru","RU")), new DateTime().getHourOfDay());
+        log.info(showMessage(getMessagesForLocale(new Locale("en","US")), new DateTime().getHourOfDay()));
+        log.info(showMessage(getMessagesForLocale(new Locale("ru","RU")), new DateTime().getHourOfDay()));
 
     }
 
