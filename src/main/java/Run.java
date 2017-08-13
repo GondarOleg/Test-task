@@ -9,14 +9,19 @@ import java.util.ResourceBundle;
 public class Run {
     public static void main(String[] args) {
 
-        showMessage(new Locale("en","US"));
-        showMessage(new Locale("ru","RU"));
+        showMessage(getTextForMessage(new Locale("en","US")));
+        showMessage(getTextForMessage(new Locale("ru","RU")));
 
     }
 
-    public static void showMessage(Locale locale){
+    public static String getTextForMessage(Locale locale){
         ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", locale);
-        System.out.println(messages.getString(getTimeOfDay()) );
+        return messages.getString(getTimeOfDay());
+    }
+
+    public static void showMessage(String text){
+
+        System.out.println(text);
     }
 
     public static String getTimeOfDay(){
