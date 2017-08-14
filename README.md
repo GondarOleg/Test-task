@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>untitled1/README.md</title>
     <H1>Test task</H1>
-    <hr>
 </head>
 <body>
 <p><a href="https://travis-ci.org/GondarOleg/untitled1"><img
