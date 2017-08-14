@@ -14,7 +14,6 @@ public class Tests {
 
     @Test
     public void testMorningDefinition() {
-
         for (int i = 6; i < 9; i++) {
             assertEquals("morning", TimeOfDay.getTimeOfDay(i));
         }
@@ -59,18 +58,60 @@ public class Tests {
     }
 
     @Test
-    public void testAllRussian() {
-        assertEquals("Доброе утро, мир!", Messages.showMessage(russianMessages, 6));
-        assertEquals("Добрый день, мир!", Messages.showMessage(russianMessages, 12));
-        assertEquals("Добрый вечер, мир!", Messages.showMessage(russianMessages, 20));
-        assertEquals("Доброй ночи, мир!", Messages.showMessage(russianMessages, 3));
+    public void testMorningRussianGreetings() {
+        for (int i = 6; i < 9; i++) {
+            assertEquals("Доброе утро, мир!", Messages.showMessage(russianMessages, i));
+        }
     }
 
     @Test
-    public void testAllEnglish() {
-        assertEquals("Good morning, World!", Messages.showMessage(englishMessages, 6));
-        assertEquals("Good day, World!", Messages.showMessage(englishMessages, 12));
-        assertEquals("Good evening, World!", Messages.showMessage(englishMessages, 20));
-        assertEquals("Good night, World!", Messages.showMessage(englishMessages, 3));
+    public void testDayRussianGreetings() {
+        for (int i = 9; i < 19; i++) {
+            assertEquals("Добрый день, мир!", Messages.showMessage(russianMessages, i));
+        }
+    }
+
+    @Test
+    public void testEveningRussianGreetings() {
+        for (int i = 19; i < 23; i++) {
+            assertEquals("Добрый вечер, мир!", Messages.showMessage(russianMessages, i));
+        }
+    }
+
+    @Test
+    public void testNightRussianGreetings() {
+        assertEquals("Доброй ночи, мир!", Messages.showMessage(russianMessages, 23));
+        for (int i = 0; i < 6; i++) {
+            assertEquals("Доброй ночи, мир!", Messages.showMessage(russianMessages, i));
+        }
+    }
+
+    @Test
+    public void testMorningEnglishGreetings() {
+        for (int i = 6; i < 9; i++) {
+            assertEquals("Good morning, World!", Messages.showMessage(englishMessages, i));
+        }
+    }
+
+    @Test
+    public void testDayEnglishGreetings() {
+        for (int i = 9; i < 19; i++) {
+            assertEquals("Good day, World!", Messages.showMessage(englishMessages, i));
+        }
+    }
+
+    @Test
+    public void testEveningEnglishGreetings() {
+        for (int i = 19; i < 23; i++) {
+            assertEquals("Good evening, World!", Messages.showMessage(englishMessages, i));
+        }
+    }
+
+    @Test
+    public void testNightEnglishGreetings() {
+        assertEquals("Good night, World!", Messages.showMessage(englishMessages, 23));
+        for (int i = 0; i < 6; i++) {
+            assertEquals("Good night, World!", Messages.showMessage(englishMessages, i));
+        }
     }
 }
