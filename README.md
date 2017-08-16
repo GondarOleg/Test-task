@@ -6,7 +6,7 @@
 </head>
 <body>
 <p><a href="https://travis-ci.org/GondarOleg/untitled1"><img
-        src="https://travis-ci.org/GondarOleg/untitled1.svg?branch=master" style="max-width:100%;"></a>
+        src="https://travis-ci.org/GondarOleg/Test-task.svg?branch=master" style="max-width:100%;"></a>
 <p>This simple application shows a greeting depending on the time of day.</p>
 <p>This application shows a simple message to the console.</p>
 <p>Translated into two languages:</p>
