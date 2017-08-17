@@ -1,6 +1,6 @@
 package utils;
 
-public class TimeOfDay {
+public class TimeOfDayDetermination {
     public static String getTimeOfDay(int hour) {
         if (hour >= 6 && hour < 9) {
             return "morning";

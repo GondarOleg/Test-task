@@ -3,9 +3,9 @@ package utils;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import static utils.TimeOfDay.getTimeOfDay;
+import static utils.TimeOfDayDetermination.getTimeOfDay;
 
-public class Messages {
+public class MessagesLocalizationAndDisplaying {
 
     public static ResourceBundle getMessagesForLocale(Locale locale) {
         ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", locale);
