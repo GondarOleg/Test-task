@@ -5,7 +5,7 @@
     <H1>Test task</H1>
 </head>
 <body>
-<p><a href="https://travis-ci.org/GondarOleg/untitled1"><img
+<p><a href="https://travis-ci.org/GondarOleg/Test-task"><img
         src="https://travis-ci.org/GondarOleg/Test-task.svg?branch=master" style="max-width:100%;"></a>
 <p>This simple application shows a greeting depending on the time of day.</p>
 <p>This application shows a simple message to the console.</p>
